@@ -1,53 +1,47 @@
 # Ajack Mobile Mechanic Website
 
-This repository contains the source code for the website of Ajack Mobile Mechanic, a mobile mechanic service-based company. The website is designed to provide information about the services offered by Ajack Mobile Mechanic and help customers easily request mobile mechanic services.
+This project is a website for Ajack Mobile Mechanic LLC, providing convenient automotive services. Here's an overview of the site structure and its features:
 
 ## Features
 
-- Responsive design: The website is fully responsive and can be accessed on various devices, including desktop computers, tablets, and mobile phones.
-- Service information: The website provides detailed information about the services offered by Ajack Mobile Mechanic, including engine repair, tire replacement, oil change, and more.
-- Contact form: Customers can easily contact Ajack Mobile Mechanic by filling out a contact form on the website, which allows them to request a service appointment or ask questions.
-- Service request: The website includes a service request feature that enables customers to request mobile mechanic services by providing their contact information and a brief description of the service needed.
-- About us: The website includes an "About Us" section that provides information about Ajack Mobile Mechanic, including their mission, values, and background.
+### Navigation
+- **Header Navigation:** Provides links to different sections of the website, including Services, Portfolio, Team, and Contact.
+
+### Sections
+1. **Banner Section**
+   - Displays the company name and a brief description of its services.
+
+2. **Services Section**
+   - Lists various automotive services offered.
+   - Each service includes an icon, name, and description.
+
+3. **Gallery Section**
+   - Displays a collection of images showcasing previous automotive projects.
+   - Images include different automotive parts and repair works.
+
+4. **Team Section**
+   - Introduces key team members of Ajack Mobile Mechanic.
+   - Each team member includes a photo, name, and role.
+
+5. **Contact Section**
+   - Provides a contact form for scheduling appointments.
+   - Options for selecting services, urgency level, appointment date and time, and additional details.
+   - Includes an about us section with company information, terms & conditions, and returns policy.
+   - Displays a Google Maps iframe for the location.
+
+### Footer
+- **Footer Content:** Contains copyright information, company address, email, phone number, and social media links.
 
 ## Technologies Used
+- **HTML5:** Structure of the web pages.
+- **CSS:** Styling and layout of the website.
+- **JavaScript:** Enhances user interaction and functionality.
+- **FontAwesome:** Icons for visual representation.
+- **Google Fonts:** Custom fonts used across the site.
 
-- HTML: The website is built using HTML5, the latest version of the Hypertext Markup Language.
-- CSS: Cascading Style Sheets (CSS3) are used for styling the website, including layout, colors, fonts, and animations.
-- JavaScript: JavaScript is used for adding interactivity to the website, such as form validation and smooth scrolling.
-- Bootstrap: The website utilizes the Bootstrap framework, a popular CSS framework, for responsive design and pre-built UI components.
-- Contact form integration: The website incorporates a server-side technology, such as PHP or Node.js, for processing the contact form submissions and sending emails to Ajack Mobile Mechanic.
+## Author
+- Ayoum Ajack
 
-## Setup
+---
 
-To set up the project locally, follow these steps:
-
-1. Clone the repository to your local machine using the following command:
-```
-git clone https://github.com/your-username/ajack-mobile-mechanic.git
-```
-2. Navigate to the project directory:
-```
-cd ajack-mobile-mechanic
-```
-3. Open the index.html file in your preferred web browser to view the website.
-
-## Contributing
-
-If you would like to contribute to the project, please follow these steps:
-
-1. Fork the repository to your own GitHub account.
-2. Create a new branch from the `main` branch with a descriptive name for your changes.
-3. Make your changes to the code and test them thoroughly.
-4. Submit a pull request to the `main` branch of the original repository.
-5. Provide a clear description of the changes made and any relevant information for review.
-
-## License
-
-The Ajack Mobile Mechanic website is open source and available under the [MIT License](LICENSE).
-
-## Contact
-
-For any inquiries or questions, please contact Ajack Mobile Mechanic at [contact@ajackmobilemechanic.com](mailto:contact@ajackmobilemechanic.com).
-
-Thank you for your interest in the Ajack Mobile Mechanic website!
+For more information or to contact Ajack Mobile Mechanic, visit [Ajack Mobile Mechanic](https://www.ajackmobilemechanic.com).
