@@ -141,6 +141,10 @@ header p {
 
     .main-nav__toggle[aria-expanded="true"] + .main-nav__list {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        margin: 0 auto;
     }
 }
 
@@ -301,7 +305,6 @@ p {
     overflow: hidden;
     margin-bottom: 1.6rem;
 }
-
 
 .team__img {
     width: 100%;
@@ -680,4 +683,19 @@ footer {
     #input-extra {
         width: 100%;
     }
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(31 49 56);
+    z-index: 9;
+    display: none;
+}
+
+#overlay.active {
+    display: block;
 }
