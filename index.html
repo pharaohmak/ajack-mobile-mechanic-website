@@ -5,17 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajack Mobile Mechanic</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Quattrocento+Sans:wght@400;700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Quattrocento+Sans:wght@400;700"
+        rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="./styles.css" type="text/css" />
     <script src="https://kit.fontawesome.com/dc4cfd0094.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <nav class="main-nav">
+        <nav class="main-nav" aria-label="Main Navigation">
             <div class="main-nav__container">
-                <ul>
-                    <li><img src="./img/logo.png" alt="Logo"></li>
+                <a href="#" class="main-nav__logo">
+                    <img src="./img/logo.png" alt="Ajack Mobile Mechanic Logo">
+                </a>
+                <button class="main-nav__toggle" aria-expanded="false" aria-controls="main-nav-list">
+                    <span class="sr-only">Menu</span>
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul id="main-nav-list" class="main-nav__list">
                     <li><a href="#services">Services</a></li>
                     <li><a href="#gallery">Portfolio</a></li>
                     <li><a href="#team">Team</a></li>
@@ -30,7 +37,7 @@
             <div class="container">
                 <div class="banner__content">
                     <h1>Ajack Mobile Mechanic LLC</h1>
-                    <p>Our mobile mechanics provides automotive services at your convenience.</p>
+                    <p>Automotive services at your convenience.</p>
                 </div>
             </div>
         </section>
@@ -39,24 +46,24 @@
             <div class="container">
                 <div class="services__container">
                     <div class="service">
-                        <i class="service__icon fas fa-volume-up"></i>
-                        <h3 class="service__name">SOUND</h3>
-                        <p>The difference is between okay sound quality and amazing sound...</p>
+                        <i class="service__icon fas fa-car-side"></i>
+                        <h3 class="service__name">TIRES & BRAKES</h3>
+                        <p>Ensure your safety with our expert tire and brake services.</p>
                     </div>
                     <div class="service">
                         <i class="service__icon fas fa-car"></i>
-                        <h3 class="service__name">ROADSIDE</h3>
-                        <p>We have a highly experienced team of wrappers, pick a colour and we will do the rest!</p>
+                        <h3 class="service__name">ROADSIDE ASSISTANCE</h3>
+                        <p>Quick and reliable roadside assistance whenever you need it.</p>
                     </div>
                     <div class="service">
                         <i class="service__icon fas fa-tools"></i>
-                        <h3 class="service__name">SERVICE</h3>
-                        <p>You won't need to pay anything until the work has been completed...</p>
+                        <h3 class="service__name">REPAIR SERVICE</h3>
+                        <p>Professional repair services to get your vehicle back on the road.</p>
                     </div>
                     <div class="service">
                         <i class="service__icon fas fa-tachometer-alt"></i>
                         <h3 class="service__name">TUNING</h3>
-                        <p>Make your automotive dreams come true with tuning kits, tuning parts...</p>
+                        <p>Enhance your vehicle's performance with our tuning services.</p>
                     </div>
                 </div>
             </div>
@@ -66,7 +73,6 @@
             <div class="heading">
                 <div class="container">
                     <h2 class="heading__title">Our gallery</h2>
-                    <p class="heading__description">“Our mission is to provide affordable automotive service and quality repair for a fraction of the price.”</p>
                 </div>
             </div>
             <div class="gallery__container">
@@ -97,15 +103,13 @@
                 <figure class="gallery__picture">
                     <img src="./img/IMG_0351.JPG" alt="Gallery Picture 9" class="gallery__img">
                 </figure>
-
             </div>
         </section>
 
         <section id="team">
             <div class="container">
                 <div class="heading">
-                    <h2 class="heading__title">our team leaders</h2>
-                    <p class="heading__description">We don’t oﬀer perks to make people happy. Our work does that.</p>
+                    <h2 class="heading__title">Our team leaders</h2>
                 </div>
 
                 <div class="team__container">
@@ -118,7 +122,16 @@
                             <p class="team__role">C.E.O. - Founder and Principal Investor</p>
                         </div>
                     </div>
-                   
+                    <div class="about raised">
+                        <h2>About Us</h2><br>
+                        <p><em>Our Mobile Mechanics Provide Automotive Services At Your Convenience.</em> <br><br>Our mission is
+                            to provide affordable automotive service and quality repair at a fraction of the price. We
+                            are your number one source for all mechanical needs. Dedicated to giving you the very best
+                            of automotive repair service, we guarantee each customer a convenient, affordable, and
+                            reliable service experience.
+                            to our customers.</p>
+                            <h3>We believe that our work speaks for itself and brings happiness!</h3>
+                    </div>
                 </div>
             </div>
         </section>
@@ -126,58 +139,54 @@
         <section id="contact">
             <div class="container">
                 <div class="heading">
-                    <h2 class="heading__title">contact us</h2>
-                    <p class="heading__description"><em>Our Mobile Mechanics Provides Automotive Services At Your Convenience.</em></p>
+                    <h2 class="heading__title">Contact us</h2>
                 </div>
                 <div class="contact__container">
-                    <form class="contactf raised" action="POST">
+                    <form class="contactf raised" action="/submit-form" method="POST">
                         <h3>Schedule An Appointment</h3>
                         <br>
                         <label for="name-input">Name: </label>
-                        <input type="text" id="name-input">
+                        <input type="text" id="name-input" name="name">
                         <br>
                         <label for="phone-input">Phone: </label>
-                        <input type="tel" id="phone-input">
+                        <input type="tel" id="phone-input" name="phone">
                         <br>
                         <label for="email-input">Email: </label>
-                        <input type="email" id="email-input">
+                        <input type="email" id="email-input" name="email">
                         <br><br>
-                        <label for="therapy-input">What services are you interested in?</label>
+                        <label for="services-input">What services are you interested in?</label>
                         <br>
-                        <input type="checkbox" id="audio" name="audio"><label for="audio"> Audio </label>
-                        <input type="checkbox" id="body" name="body"><label for="body"> Body </label>
-                        <input type="checkbox" id="full" name="full"><label for="full"> Full </label>
+                        <input type="checkbox" id="audio" name="services" value="audio"><label for="audio"> Audio
+                        </label>
+                        <input type="checkbox" id="body" name="services" value="body"><label for="body"> Body </label>
+                        <input type="checkbox" id="full" name="services" value="full"><label for="full"> Full </label>
                         <br><br>
-                        <label for="fixing-speed">How urgent you need the tuning?</label>
+                        <label for="urgency-input">How urgent do you need the tuning?</label>
                         <br>
-                        <input type="radio" name="normal" id="normal"><label for="normal"> I'm in no hurry</label>
-                        <input type="radio" name="fast" id="fast"><label for="fast"> Urgent</label>
+                        <input type="radio" name="urgency" id="normal" value="normal"><label for="normal"> I'm in no
+                            hurry</label>
+                        <input type="radio" name="urgency" id="fast" value="fast"><label for="fast"> Urgent</label>
                         <br><br>
                         <label for="input-date">Appointment: </label><br>
-                        <input type="date" id="input-date" min="2023-06-08" max="2022-03-30">
-                        <input type="time" min="08:00" max="18:00">
+                        <input type="date" id="input-date" name="appointment-date" min="2023-06-08" max="2025-03-30">
+                        <input type="time" name="appointment-time" min="08:00" max="18:00">
                         <br><br>
                         <label for="input-extra">More details: </label>
                         <br>
-                        <textarea name="input-extra" id="input-extra" cols="40" rows="10" placeholder="Tell us more details about what you want. We are here to help you."></textarea>
+                        <textarea name="details" id="input-extra" cols="40" rows="10"
+                            placeholder="Tell us more details about what you want. We are here to help you."></textarea>
                         <br><br>
                         <input type="submit" value="Submit">
                     </form>
 
                     <div class="contact__about raised">
-                        <h2>About Us</h2><br>
-                        <p>Your number one source for all mechanical needs. We're dedicated to giving you the very best of automotive repair service. We guarantee each customer a convenient, affordable, and reliable service experience. </p>
-                        <br><h2>Terms & Conditions</h2>
-                        <p>We usually dispatch a technitian on the same or next working day after cleared payment. Our goal is to offer you high level customer service and product support.</p><br>
+                        <br>
+                        <h2>Terms & Conditions</h2>
+                        <p>We usually dispatch a technician on the same or next working day after cleared payment. Our
+                            goal is to offer you high-level customer service and product support.</p><br>
                         <h2>Returns</h2>
-                        <p>If you are not happy with the product you have two weeks to return it to us in original condition and we will send you money back.</p>
-                    </div>
-
-                </div>
-                <div class="raised mapouter">
-                    <div class="contact__map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.540423056441!2d-0.12174238407507898!3d51.50330061882359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2suk!4v1615316791708!5m2!1sen!2suk"
-                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <p>If you are not happy with the product you have two weeks to return it to us in original
+                            condition and we will send you money back.</p>
                     </div>
                 </div>
             </div>
@@ -187,7 +196,7 @@
     <footer>
         <div class="container">
             <div class="row">
-                <p>Copyright &copy; 2020 Ajack Mobile Mechanic. All right reserved!</p>
+                <p>Copyright &copy; 2020 Ajack Mobile Mechanic. All rights reserved!</p>
                 <div class="center">
                     <p>Salt Lake City, Utah, United States</p>
                     <p>Email: ajack@mobilemechanic.com</p>
@@ -203,6 +212,7 @@
             </div>
         </div>
     </footer>
+    <script src="./scripts.js"></script>
 </body>
 
 </html>
