@@ -9,6 +9,12 @@
         rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="./styles.css" type="text/css" />
     <script src="https://kit.fontawesome.com/dc4cfd0094.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script> <!-- Include EmailJS library -->
+    <script>
+        (function () {
+            emailjs.init("4QddnoPRncch2QQ2_"); // Replace "YOUR_USER_ID" with your actual EmailJS user ID
+        })();
+    </script>
 </head>
 
 <body>
@@ -31,7 +37,9 @@
             </div>
         </nav>
     </header>
+
     <div id="overlay"></div>
+
     <main>
         <section id="banner">
             <div class="container">
@@ -124,13 +132,13 @@
                     </div>
                     <div class="about raised">
                         <h2>About Us</h2><br>
-                        <p><em>Our Mobile Mechanics Provide Automotive Services At Your Convenience.</em> <br><br>Our mission is
-                            to provide affordable automotive service and quality repair at a fraction of the price. We
-                            are your number one source for all mechanical needs. Dedicated to giving you the very best
-                            of automotive repair service, we guarantee each customer a convenient, affordable, and
-                            reliable service experience.
-                            to our customers.</p>
-                            <h3>We believe that our work speaks for itself and brings happiness!</h3>
+                        <p><em>Our Mobile Mechanics Provide Automotive Services At Your Convenience.</em> <br><br>Our
+                            mission is to provide affordable automotive service and quality repair at a fraction of the
+                            price. We are your number one source for all mechanical needs. Dedicated to giving you the
+                            very best of automotive repair service, we guarantee each customer a convenient, affordable,
+                            and reliable service experience. We believe that our work speaks for itself and brings
+                            happiness to our customers.</p>
+                        <h3>We believe that our work speaks for itself and brings happiness!</h3>
                     </div>
                 </div>
             </div>
@@ -142,7 +150,7 @@
                     <h2 class="heading__title">Contact us</h2>
                 </div>
                 <div class="contact__container">
-                    <form class="contactf raised" action="/submit-form" method="POST">
+                    <form id="contact-form" class="contactf raised" action="/submit-form" method="POST">
                         <h3>Schedule An Appointment</h3>
                         <br>
                         <label for="name-input">Name: </label>
@@ -177,6 +185,7 @@
                             placeholder="Tell us more details about what you want. We are here to help you."></textarea>
                         <br><br>
                         <input type="submit" value="Submit">
+                        <div id="form-messages" class="form-messages"></div> <!-- Add this line for messages -->
                     </form>
 
                     <div class="contact__about raised">
@@ -203,11 +212,11 @@
                     <p>Phone: +1 (385) 831-9450</p>
                 </div>
                 <ul class="social-link">
-                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
-                    <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                    <li><a><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a><i class="fab fa-twitter"></i></a></li>
+                    <li><a><i class="fab fa-instagram"></i></a></li>
+                    <li><a><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a><i class="fab fa-youtube"></i></a></li>
                 </ul>
             </div>
         </div>
